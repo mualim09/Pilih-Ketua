@@ -1,0 +1,133 @@
+.nav-top {
+
+	display: flex;
+	justify-content: center;
+	border:none;
+	margin: 0;
+	padding: 5px;
+	background-color: rgba(0,0,0,0.1);
+	position: sticky;
+	top:0;
+	z-index: 999999999999999;
+	-ms-filter: drop-shadow(-2px 1px 3px rgba(0,0,0,0.15));
+	-webkit-filter: drop-shadow(-2px 1px 3px rgba(0,0,0,0.15));
+	-moz-filter: drop-shadow(-2px 1px 3px rgba(0,0,0,0.15));
+	-o-filter: drop-shadow(-2px 1px 3px rgba(0,0,0,0.15));
+	filter: drop-shadow(-2px 1px 3px rgba(0,0,0,0.15));
+}
+
+.nav-top ul {
+	margin: 0;
+	padding: 0;
+	position: sticky;
+	top: 0;
+}
+
+.nav-top ul li {
+	display: inline-block;
+	clear: both;
+	text-decoration: none;
+	padding: 10px 15px 10px 15px;
+	margin: 0;
+	border:none;
+	border-bottom: 2px solid rgba(0,0,0,0);
+	transition: 0.3s ease-out
+}
+
+.nav-top ul li a {
+	color:#26a267;
+}
+.nav-top ul li:hover{
+	background: rgba(0,0,0,0.2);
+}
+.nav-top ul .active:hover  {
+	background: rgba(0,0,0,0.1);
+}
+.nav-top ul .active:hover::before {
+	content: '';
+	width: 100%;
+	left: 0;
+
+ }
+.nav-top ul li.active {
+	background: rgba(0,0,0,0);
+	color: #26a267;
+	font-family: raleway-bold;
+	position: relative;
+}
+.nav-top ul li.active::before {
+	content: '';
+	border: none;
+	border-bottom: 2px solid #14C672;
+	width: 50%;
+	position: absolute;
+	left: 25%;
+	bottom : 0;
+	height: 1px;
+	transition: 0.3s ease-out
+}
+.nav-top ul li.active a {
+	color: #26a267
+}
+.logo-menu-group {
+	position: absolute;
+	left:75px;
+}
+.logo-menu {
+	position: relative;
+	display: inline-block;
+}
+#logo-jeparatv {
+	width: 110px;
+	height: 40px;
+	padding-left: 10px;
+}
+#logo-smkn3 {
+	width: 50px;
+	height: 40px;
+	padding-right: 10px;
+	border: none;
+	border-right: 2px solid rgba(255,255,255,0.3);
+}
+.search-menu-group {
+	position: absolute;
+	right:75px;
+	margin-top: 5px;
+}
+.search-menu-group input {
+	color: #3a405e;
+	width: 250px;
+	font-size: 14px;
+	padding: 7px;
+	margin: 0;
+	background: #F6F4F4;
+	border:1px solid #f4f4f4;
+	border-radius: 50px;
+	transition: 0.25s ease-out;
+	overflow: hidden;
+}
+.search-menu-group button {
+	margin: 0;
+	background: #E9E9E9;
+	border-radius: 50px;
+	border: none;
+	margin-left: -35px;
+	color: #26a267;
+
+/*	margin-left: -36px;
+*/}
+.search-menu-group input:focus {
+	border:1px solid #26a267;
+	background: #fff;
+	width: 300px;
+}
+.search-menu-group button:hover {
+	color: #0E7E49;
+	background: #DFDFDF
+}
+.nav-top .nav-toggle,.nav-top .nav-toggle:hover {
+	background: #182c3a;
+	color:#fff;
+	display: none;
+	padding: 10px
+}

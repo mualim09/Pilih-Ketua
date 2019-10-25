@@ -1,0 +1,376 @@
+#menu {
+	transition: 0.2s ease-out;
+	z-index: 99999;
+}
+
+.nav-top {
+	display: flex;
+	justify-content: center;
+	border:none;
+	margin: 0;
+	padding: 5px;
+	background-color: rgba(0,0,0,0.3);
+	position: sticky;
+	top:0;
+	z-index: 999999999999999;
+	-ms-filter: drop-shadow(-2px 1px 3px rgba(0,0,0,0.15));
+	-webkit-filter: drop-shadow(-2px 1px 3px rgba(0,0,0,0.15));
+	-moz-filter: drop-shadow(-2px 1px 3px rgba(0,0,0,0.15));
+	-o-filter: drop-shadow(-2px 1px 3px rgba(0,0,0,0.15));
+	filter: drop-shadow(-2px 1px 3px rgba(0,0,0,0.15));
+}
+
+.nav-top ul {
+	margin: 0;
+	padding: 0;
+	position: sticky;
+	top: 0;
+}
+
+.nav-top ul li {
+	display: inline-block;
+	clear: both;
+	text-decoration: none;
+	padding: 10px 15px 10px 15px;
+	margin: 0;
+	border:none;
+	border-bottom: 2px solid rgba(0,0,0,0);
+	border-radius: 5px;
+
+}
+
+.nav-top ul li a {
+	text-transform: uppercase;
+	font-family: helvetica;
+	color:#26a267;
+}
+.nav-top ul li:hover{
+	background: rgba(255,255,255,0.05);
+}
+.nav-top ul .active:hover  {
+	background: rgba(255,255,255,0.05);
+}
+.nav-top ul .active:hover::before {
+	content: '';
+	width: 100%;
+	left: 0;
+
+ }
+.nav-top ul li.active {
+	background: rgba(0,0,0,0);
+	color: #26a267;
+	position: relative;
+	font-weight: bold;
+}
+.nav-top ul li.active::before {
+	content: '';
+	border: none;
+	border-bottom: 2px solid #14C672;
+	width: 50%;
+	position: absolute;
+	left: 25%;
+	bottom : 0;
+	height: 1px;
+	transition: 0.3s ease-out
+}
+.nav-top ul li.active a {
+	color: #26a267
+}
+.logo-menu-group {
+	position: absolute;
+	left:75px;
+}
+.logo-menu {
+	position: relative;
+	display: inline-block;
+}
+#logo-jeparatv {
+	width: 110px;
+	height: 40px;
+	padding-left: 10px;
+}
+.nav-top #logo-smkn3 {
+	width: 50px;
+	height: 40px;
+	padding-right: 10px;
+	border: none;
+	border-right: 2px solid rgba(255,255,255,0.3);
+	transition: 0.2s ease-out;
+}
+.nav-top .search-menu-group {
+	position: absolute;
+	right:75px;
+	margin-top: 5px;
+}
+.nav-top .search-menu-group input {
+	color: #fff;
+	width: 250px;
+	font-size: 14px;
+	padding: 7px;
+	margin: 0;
+	background: rgba(255,255,255,0.1);
+	border:1px solid rgba(255,255,255,0.1);
+	border-radius: 50px;
+	transition: 0.1s ease-out;
+	overflow: hidden;
+}
+.nav-top .search-menu-group button {
+	z-index: 999;
+	position: relative;
+	margin: 0;
+	background: #1E1E1E;
+	border-radius: 50px;
+	border: none;
+	margin-left: -35px;
+	color: #26a267;
+	transition: 0.4s ease-out;
+
+/*	margin-left: -36px;
+*/}
+.nav-top .search-menu-group input:focus {
+	background: rgba(255,255,255,0.1);
+	border:1px solid rgba(255,255,255,0.5);
+}/*
+.nav-top .search-menu-group button:hover {
+	color: #26a267;
+	background: #242424;
+}*/
+.nav-top .nav-toggle,.nav-top .nav-toggle:hover {
+	background: #182c3a;
+	color:#fff;
+	display: none;
+	padding: 10px
+}
+.nav-top #logo-jeparatv-nav {
+	display: none;
+}
+.nav #logo-jeparatv-nav {
+	display: none;
+}
+.nav {
+	font-size: 17px;
+	display: flex;
+	justify-content: center;
+	border:none;
+	margin: 0;
+	padding: 5px;
+	background-color: #fff;
+	position: sticky;
+	top:0;
+	z-index: 999999999999999;
+	-ms-filter: drop-shadow(-2px 1px 3px rgba(0,0,0,0.15));
+	-webkit-filter: drop-shadow(-2px 1px 3px rgba(0,0,0,0.15));
+	-moz-filter: drop-shadow(-2px 1px 3px rgba(0,0,0,0.15));
+	-o-filter: drop-shadow(-2px 1px 3px rgba(0,0,0,0.15));
+	filter: drop-shadow(-2px 1px 3px rgba(0,0,0,0.15));
+	border:none;
+}
+
+.nav ul {
+	margin: 0;
+	padding: 0;
+	position: sticky;
+	top: 0;
+}
+
+.nav ul li {
+	display: inline-block;
+	clear: both;
+	text-decoration: none;
+	padding: 10px 15px 10px 15px;
+	margin: 0;
+	border:none;
+	border-bottom: 2px solid rgba(0,0,0,0);
+}
+
+.nav ul li a {
+
+	text-transform: uppercase;
+	font-family: helvetica;
+	color:#26a267;
+}
+.nav ul li:hover{
+	background: #fafafa;
+}
+.nav ul .active:hover  {
+	background: #FAFAFA;
+}
+.nav ul .active:hover::before {
+	content: '';
+	width: 100%;
+	left: 0;
+
+
+ }
+.nav ul li.active {
+	background: rgba(0,0,0,0);
+	color: #26a267;
+	position: relative;
+	font-weight: bold;
+}
+.nav ul li.active::before {
+	content: '';
+	border: none;
+	width: 50%;
+	position: absolute;
+	left: 25%;
+	bottom : 0;
+	height: 1px;
+	transition: 0.3s ease-out;
+			border-bottom: 2px solid #14C672;
+
+}
+.nav ul li.active a {
+	color: #26a267
+}
+.logo-menu-group {
+	position: absolute;
+	left:75px;
+}
+.logo-menu {
+	position: relative;
+	display: inline-block;
+}
+#logo-jeparatv {
+	width: 110px;
+	height: 40px;
+	padding-left: 10px;
+}
+.nav #logo-smkn3 {
+	width: 50px;
+	height: 40px;
+	padding-right: 10px;
+	border: none;
+	border-right: 2px solid #eee;
+	transition: 0.2s ease-out;
+
+}
+.nav .search-menu-group {
+	position: absolute;
+	right:75px;
+	margin-top: 5px;
+}
+.nav .search-menu-group input {
+	color: #3a405e;
+	width: 250px;
+	font-size: 14px;
+	padding: 7px;
+	margin: 0;
+	background: #fff;
+	border:1px solid #eee;
+	border-radius: 50px;
+	transition: 0.1s ease-out;
+	overflow: hidden;
+}
+.nav .search-menu-group button {
+	z-index: 999;
+	position: relative;
+	margin: 0;
+	background: #fff;
+	border-radius: 50px;
+	border: none;
+	margin-left: -35px;
+	color: #26a267;
+		transition: 0.4s ease-out;
+
+
+/*	margin-left: -36px;
+*/}
+.nav .search-menu-group input:focus {
+	border:1px solid #26a267;
+	background: #fff;
+}/*
+.nav .search-menu-group button:hover {
+	background: #f4f4f4
+}*/
+.nav .nav-toggle,.nav .nav-toggle:hover {
+	background: #182c3a;
+	color:#fff;
+	display: none;
+	padding: 10px
+}
+
+
+@media screen and (max-width:1120px) {
+	.nav {
+		margin: 0;
+		position: sticky;
+		top: 0;
+		transform: translate(0,-15px);
+	}
+
+	.nav ul {
+		display: none;
+	}
+	.nav ul .active::before , .nav ul .active {
+		width: 100%;
+		background-color: #26a267;
+		color: #fff;
+	}
+	.nav ul .active:hover::before,.nav ul .active:hover {
+		background-color: #26a267;
+		color: #fff;
+		content: ''
+	}
+.nav ul li.active {
+	background: #26a267;
+	color: #fff;
+	font-family: raleway-bold;
+	position: relative;
+}
+.nav ul li.active::before {
+	content: '';
+				border-bottom: 2px solid rgba(0,0,0,0);
+
+}
+.nav ul li.active a {
+	color: #fff
+}
+	.nav .nav-toggle,.nav .nav-toggle:hover {
+		display: block;
+		
+	}
+	.logo-menu-group,.search-menu-group {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		position: static;
+		display: block;
+		margin-bottom: 25px;
+		clear: both
+	}
+	.logo-menu-group {
+		display: none;
+	}
+	.nav ul li {
+		display: block;
+	}
+	.nav ul li:hover,.nav ul .active,.nav ul li .active:hover {
+		border-radius: 0;
+	}
+	.nav {
+		display: block;
+		position: static;
+		padding: 0;
+		padding-top: 15px;
+		position: sticky;
+		top:0;
+	}
+
+	.nav .search-menu-group input:focus {
+		width: 250px;
+	}
+	.nav-toggle {
+		clear: both;
+		z-index: 999
+	}
+	.nav .search-menu-group {
+		right:5px;
+
+	}
+	.nav #logo-jeparatv-nav {
+	display: inline-block;
+	width: 100px;
+	margin-left: 40px;
+}
+}

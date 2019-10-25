@@ -1,0 +1,81 @@
+html,body {
+	margin: 0;
+	padding: 0;
+	background-color: #F1F2F5
+}
+button:focus {outline:0;}
+
+#header {
+	display: block;
+	text-align: center;
+	margin: 0;
+	background-color: #fff;
+	border: none;
+	filter:drop-shadow(0px 3px 3px rgba(0,0,0,0.3));
+	z-index: 999999;
+	position: sticky;
+	top:0;
+}
+
+#header img {
+	padding:20px 0 20px 0;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin-left: 15px;
+	vertical-align: middle;
+}
+#header h1 {
+	color: #333333;
+	padding: 20px 0 20px 0;
+	display: inline-block;
+	vertical-align: middle;
+}
+.container {
+	margin-top: 50px;
+}
+.tabs:hover {
+	color: #676767
+}
+.active:hover {
+	color: #3c8dbc
+}
+input[type=radio] {
+	display: none
+}
+.box-widget {
+	border-radius: 5px;
+	min-height: 350px
+
+}
+.kandidat {
+	transition: 0.15s ease-in;
+}
+
+.description-text {
+	color: #9D9D9D
+}
+.active {
+	color:#3c8dbc
+}
+
+        .button{
+            color: white;
+            background-color: #3c8dbc;
+            border: 0;
+            width: 75px;
+            font-weight: bold;
+            box-shadow: rgba(0,0,0,0.5);
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 10px;
+        }
+tabs tab {
+	background-color: #3c8dbc
+}
+@media screen and (min-width:995px) {
+	.kandidat:hover {
+		filter:drop-shadow(0px 2px 5px rgba(0,0,0,0.2));
+		transform: scale(1.1);
+	}
+}
